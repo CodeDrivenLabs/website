@@ -418,9 +418,9 @@
                         <p>We value your inquiry and appreciate your interest in our services. Our team is dedicated to providing you with the best possible support.</p>
                     </div>
                    <div class="col-2">
-                    <div>
+                    <div class="my-form">
 
-                        <form target="_blank" action="https://formsubmit.co/shakilahmmed252@gmail.com" method="POST" id="myForm">
+                        <form  method="POST" id="myForm">
                         <!-- <h2 class="section-title" style="text-align: left;">How May We Help You!</h2> -->
                         <div style="text-align: left;">
                             <h6 style="font-weight: bold;">Enter Name</h6>
@@ -440,8 +440,8 @@
                         </div>
                         <button type="submit" class="button" style="width: 100%;">SEND MESAGE</button>
                        </form>
-                       <div id="thankYouMessage" style="display: none;">
-                        Thank you. We will get back to you soon.
+                       <div id="thankYouMessage" style="display: none; background-color: green; color: white; padding: 3px 0 3px 0;">
+                        Thank you for your interest. We will get back to you soon.
                     </div>
                     
                     </div>
@@ -520,38 +520,57 @@
 <script src="js/images-loaded.min.js"></script>
 <script src="js/lightbox.min.js"></script>
 <script src="js/site.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
 <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const form = document.getElementById("myForm");
-        const thankYouMessage = document.getElementById("thankYouMessage");
-
-        form.addEventListener("submit", function (event) {
-            // event.preventDefault(); // Prevent the default form submission
-
-            // You can optionally send the form data to your server using AJAX here
-            // Example AJAX code to submit the form data:
-            const formData = new FormData(form);
-            fetch(form.getAttribute("action"), {
-                method: "POST",
-                body: formData,
-            })
-                .then(function (response) {
-                    if (response.ok) {
-                        console.log("response",response)
-                        // Form submission successful
-                        // Display the "Thank you" message and hide the form
-                        form.style.display = "none";
-                        thankYouMessage.style.display = "block";
-                    } else {
-                        // Handle form submission error if needed
-                    }
-                })
-                .catch(function (error) {
-                    // Handle any errors during form submission
-                });
+    $(document).ready(function() {
+        $('.my-form').waypoint(function() {
+        }, {
+            offset: '50%'
         });
     });
 </script>
+
+
+<script>
+    $(document).ready(function () {
+        $("#myForm").submit(function (event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Prepare the data to send
+            var formData = {
+                name: $("input[name='name']").val(),
+                email: $("input[name='email']").val(),
+                phone: $("input[name='phone']").val(),
+                message: $("textarea[name='message']").val()
+            };
+
+            // Send the POST request to FormSubmit
+            $.ajax({
+                url: "https://formsubmit.co/ajax/info@codedrivenlabs.com",
+                method: "POST",
+                data: formData,
+                dataType: "json",
+                success: function (response) {
+                    console.log("res",response)
+                    if (response.success) {
+                        // Form submission successful
+                        // $("#myForm").hide();
+                        $("#thankYouMessage").show();
+                    } else {
+                        // Handle form submission error if needed
+                        console.error("Form submission error:", response.message);
+                    }
+                },
+                error: function (error) {
+                    // Handle any errors during form submission
+                    console.error("Form submission error:", error);
+                }
+            });
+        });
+    });
+</script>
+
 
 </body>
 </html>
