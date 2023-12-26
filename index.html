@@ -1,459 +1,655 @@
 <!DOCTYPE html>
 <html>
-<head lang="en">
-    <meta charset="UTF-8">
+  <head lang="en">
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-773NG7MQMP"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-773NG7MQMP");
+    </script>
+    <meta charset="UTF-8" />
 
     <!--Page Title-->
     <title>Code Driven Labs</title>
 
     <!--Meta Keywords and Description-->
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
 
     <!--Favicon-->
-    <link rel="shortcut icon" href="images/logo_png.png" title="Favicon"/>
+    <link rel="shortcut icon" href="images/logo_png.png" title="Favicon" />
 
     <!-- Main CSS Files -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
 
     <!-- Namari Color CSS -->
-    <link rel="stylesheet" href="css/namari-color.css">
+    <link rel="stylesheet" href="css/namari-color.css" />
 
     <!--Icon Fonts - Font Awesome Icons-->
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
 
     <!-- Animate CSS-->
-    <link href="css/animate.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.css" rel="stylesheet" type="text/css" />
 
     <!--Google Webfonts-->
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
-</head>
-<body>
-
-<!-- Preloader -->
-<div id="preloader">
-    <div id="status" class="la-ball-triangle-path">
-        
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div id="preloader">
+      <div id="status" class="la-ball-triangle-path"></div>
     </div>
-</div>
-<!--End of Preloader-->
+    <!--End of Preloader-->
 
-<div class="page-border" data-wow-duration="0.7s" data-wow-delay="0.2s">
-    <div class="top-border wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;"></div>
-    <div class="right-border wow fadeInRight animated" style="visibility: visible; animation-name: fadeInRight;"></div>
-    <div class="bottom-border wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;"></div>
-    <div class="left-border wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;"></div>
-</div>
+    <div class="page-border" data-wow-duration="0.7s" data-wow-delay="0.2s">
+      <div
+        class="top-border wow fadeInDown animated"
+        style="visibility: visible; animation-name: fadeInDown"
+      ></div>
+      <div
+        class="right-border wow fadeInRight animated"
+        style="visibility: visible; animation-name: fadeInRight"
+      ></div>
+      <div
+        class="bottom-border wow fadeInUp animated"
+        style="visibility: visible; animation-name: fadeInUp"
+      ></div>
+      <div
+        class="left-border wow fadeInLeft animated"
+        style="visibility: visible; animation-name: fadeInLeft"
+      ></div>
+    </div>
 
-<div id="wrapper">
-
-    <header id="banner" class="scrollto clearfix" data-enllax-ratio=".5">
+    <div id="wrapper">
+      <header id="banner" class="scrollto clearfix" data-enllax-ratio=".5">
         <div id="header" class="nav-collapse">
-            <div class="row clearfix">
-                <div class="col-1">
+          <div class="row clearfix">
+            <div class="col-1">
+              <!--Logo-->
+              <div id="logo">
+                <!--Logo that is shown on the banner-->
+                <img
+                  src="images/logo_png1.png"
+                  id="banner-logo"
+                  alt="Landing Page"
+                />
+                <!--End of Banner Logo-->
 
-                    <!--Logo-->
-                    <div id="logo">
+                <!--The Logo that is shown on the sticky Navigation Bar-->
+                <img
+                  src="images/logo_png1.png"
+                  id="navigation-logo"
+                  alt="Landing Page"
+                />
+                <!--End of Navigation Logo-->
+              </div>
+              <!--End of Logo-->
 
-                        <!--Logo that is shown on the banner-->
-                        <img src="images/logo_png1.png" id="banner-logo" alt="Landing Page"/>
-                        <!--End of Banner Logo-->
+              <aside>
+                <!--Social Icons in Header-->
+                <ul class="social-icons">
+                  <li>
+                    <a
+                      target="_blank"
+                      title="Facebook"
+                      href="https://www.facebook.com/codedrivenlabs"
+                    >
+                      <i class="fa fa-facebook fa-1x"></i><span>Facebook</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      target="_blank"
+                      title="Google+"
+                      href="http://google.com/+username"
+                    >
+                      <i class="fa fa-google-plus fa-1x"></i
+                      ><span>Google+</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      target="_blank"
+                      title="Instagram"
+                      href="http://www.instagram.com/codedrivenlabs"
+                    >
+                      <i class="fa fa-instagram fa-1x"></i
+                      ><span>Instagram</span>
+                    </a>
+                  </li>
+                </ul>
+                <!--End of Social Icons in Header-->
+              </aside>
 
-                        <!--The Logo that is shown on the sticky Navigation Bar-->
-                        <img src="images/logo_png1.png" id="navigation-logo" alt="Landing Page"/>
-                        <!--End of Navigation Logo-->
+              <!--Main Navigation-->
+              <nav id="nav-main">
+                <ul>
+                  <li>
+                    <a href="#banner">Home</a>
+                  </li>
+                  <li>
+                    <a href="#services">Services</a>
+                  </li>
+                  <li>
+                    <a href="#about">About Us</a>
+                  </li>
+                  <li>
+                    <a href="#testimonials">Testimonials</a>
+                  </li>
+                  <li>
+                    <a href="#clients">Clients</a>
+                  </li>
+                  <li>
+                    <a href="#contact">Contact Us</a>
+                  </li>
+                </ul>
+              </nav>
+              <!--End of Main Navigation-->
 
-                    </div>
-                    <!--End of Logo-->
-
-                    <aside>
-
-                        <!--Social Icons in Header-->
-                        <ul class="social-icons">
-                            <li>
-                                <a target="_blank" title="Facebook" href="https://www.facebook.com/codedrivenlabs">
-                                    <i class="fa fa-facebook fa-1x"></i><span>Facebook</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a target="_blank" title="Google+" href="http://google.com/+username">
-                                    <i class="fa fa-google-plus fa-1x"></i><span>Google+</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a target="_blank" title="Instagram" href="http://www.instagram.com/codedrivenlabs">
-                                    <i class="fa fa-instagram fa-1x"></i><span>Instagram</span>
-                                </a>
-                            </li>
-                        </ul>
-                        <!--End of Social Icons in Header-->
-
-                    </aside>
-
-                    <!--Main Navigation-->
-                    <nav id="nav-main">
-                        <ul>
-                            <li>
-                                <a href="#banner">Home</a>
-                            </li>
-                            <li>
-                                <a href="#services">Services</a>
-                            </li>
-                            <li>
-                                <a href="#about">About Us</a>
-                            </li>
-                            <li>
-                                <a href="#testimonials">Testimonials</a>
-                            </li>
-                            <li>
-                                <a href="#clients">Clients</a>
-                            </li>
-                            <li>
-                                <a href="#contact">Contact Us</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <!--End of Main Navigation-->
-
-                    <div id="nav-trigger"><span></span></div>
-                    <nav id="nav-mobile"></nav>
-
-                </div>
+              <div id="nav-trigger"><span></span></div>
+              <nav id="nav-mobile"></nav>
             </div>
-        </div><!--End of Header-->
+          </div>
+        </div>
+        <!--End of Header-->
 
         <!--Banner Content-->
         <div id="banner-content" class="row clearfix">
-
-            <div class="col-38">
-
-                <div class="section-heading">
-                    <h1>BUILDING BRIDGES IN THE DIGITAL LANDSCAPES</h1>
-                    <h2>Your one stop destination, where every aspect of your IT requirements finds comprehensive solutions under one roof!</h2>
-                </div>
-
-                <!--Call to Action-->
-                <a href="#contact" class="button">CONTACT US</a>
-                <!--End Call to Action-->
-
+          <div class="col-38">
+            <div class="section-heading">
+              <h1>BUILDING BRIDGES IN THE DIGITAL LANDSCAPES</h1>
+              <h2>
+                Your one stop destination, where every aspect of your IT
+                requirements finds comprehensive solutions under one roof!
+              </h2>
             </div>
 
-        </div><!--End of Row-->
-    </header>
+            <!--Call to Action-->
+            <a href="#contact" class="button">CONTACT US</a>
+            <!--End Call to Action-->
+          </div>
+        </div>
+        <!--End of Row-->
+      </header>
 
-    <!--Main Content Area-->
-    <main id="content">
-
+      <!--Main Content Area-->
+      <main id="content">
         <!--Introduction-->
         <section id="services" class="introduction scrollto">
-
-            <div class="row clearfix">
-
-                <div class="col-3">
-                    <div class="section-heading">
-                        <h3>SERVICES</h3>
-                        <h2 class="section-title">SERVICES WE PROVIDE</h2>
-                        <p class="section-subtitle">Comprehensive solutions spanning web and software development, cloud computing, and expert IT consultation.</p>
-                    </div>
-
-                </div>
-
-                <div class="col-2-3">
-
-                    <!--Icon Block-->
-                    <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.1s">
-                        <!--Icon-->
-                        <div class="icon">
-                            <i class="fa fa-html5 fa-2x"></i>
-                        </div>
-                        <!--Icon Block Description-->
-                        <div class="icon-block-description">
-                            <h4>Web Development</h4>
-                            <p>Creating interactive and engaging digital experiences through code and design.</p>
-                        </div>
-                    </div>
-                    <!--End of Icon Block-->
-
-                    <!--Icon Block-->
-                    <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.3s">
-                        <!--Icon-->
-                        <div class="icon">
-                            <i class="fa fa-bolt fa-2x"></i>
-                        </div>
-                        <!--Icon Block Description-->
-                        <div class="icon-block-description">
-                            <h4>Software Solutions</h4>
-                            <p>Developing innovative software solutions to address complex challenges and enhance user experiences.</p>
-                        </div>
-                    </div>
-                    <!--End of Icon Block-->
-
-                    <!--Icon Block-->
-                    <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.5s">
-                        <!--Icon-->
-                        <div class="icon">
-                            
-                            <i class="fa fa-rocket fa-2x"></i>
-                        </div>
-                        <!--Icon Block Description-->
-                        <div class="icon-block-description">
-                            <h4>Cloud Computing</h4>
-                            <p>Delivering on-demand computing resources and services over the internet to enable scalable and flexible IT solutions.</p>
-                        </div>
-                    </div>
-                    <!--End of Icon Block-->
-
-                    <!--Icon Block-->
-                    <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.5s">
-                        <!--Icon-->
-                        <div class="icon">
-                            <i class="fa fa-tablet fa-2x"></i>
-                        </div>
-                        <!--Icon Block Description-->
-                        <div class="icon-block-description">
-                            <h4>IT Consultation</h4>
-                            <p>Providing expert guidance to optimize technology strategies and solutions for business success.</p>
-                        </div>
-                    </div>
-                    <!--End of Icon Block-->
-
-                </div>
-
+          <div class="row clearfix">
+            <div class="col-3">
+              <div class="section-heading">
+                <h3>SERVICES</h3>
+                <h2 class="section-title">SERVICES WE PROVIDE</h2>
+                <p class="section-subtitle">
+                  Comprehensive solutions spanning web and software development,
+                  cloud computing, and expert IT consultation.
+                </p>
+              </div>
             </div>
 
+            <div class="col-2-3">
+              <!--Icon Block-->
+              <div
+                class="col-2 icon-block icon-top wow fadeInUp"
+                data-wow-delay="0.1s"
+              >
+                <!--Icon-->
+                <div class="icon">
+                  <i class="fa fa-html5 fa-2x"></i>
+                </div>
+                <!--Icon Block Description-->
+                <div class="icon-block-description">
+                  <h4>Web Development</h4>
+                  <p>
+                    Creating interactive and engaging digital experiences
+                    through code and design.
+                  </p>
+                </div>
+              </div>
+              <!--End of Icon Block-->
 
+              <!--Icon Block-->
+              <div
+                class="col-2 icon-block icon-top wow fadeInUp"
+                data-wow-delay="0.3s"
+              >
+                <!--Icon-->
+                <div class="icon">
+                  <i class="fa fa-bolt fa-2x"></i>
+                </div>
+                <!--Icon Block Description-->
+                <div class="icon-block-description">
+                  <h4>Software Solutions</h4>
+                  <p>
+                    Developing innovative software solutions to address complex
+                    challenges and enhance user experiences.
+                  </p>
+                </div>
+              </div>
+              <!--End of Icon Block-->
+
+              <!--Icon Block-->
+              <div
+                class="col-2 icon-block icon-top wow fadeInUp"
+                data-wow-delay="0.5s"
+              >
+                <!--Icon-->
+                <div class="icon">
+                  <i class="fa fa-rocket fa-2x"></i>
+                </div>
+                <!--Icon Block Description-->
+                <div class="icon-block-description">
+                  <h4>Cloud Computing</h4>
+                  <p>
+                    Delivering on-demand computing resources and services over
+                    the internet to enable scalable and flexible IT solutions.
+                  </p>
+                </div>
+              </div>
+              <!--End of Icon Block-->
+
+              <!--Icon Block-->
+              <div
+                class="col-2 icon-block icon-top wow fadeInUp"
+                data-wow-delay="0.5s"
+              >
+                <!--Icon-->
+                <div class="icon">
+                  <i class="fa fa-tablet fa-2x"></i>
+                </div>
+                <!--Icon Block Description-->
+                <div class="icon-block-description">
+                  <h4>IT Consultation</h4>
+                  <p>
+                    Providing expert guidance to optimize technology strategies
+                    and solutions for business success.
+                  </p>
+                </div>
+              </div>
+              <!--End of Icon Block-->
+            </div>
+          </div>
         </section>
         <!--End of Introduction-->
 
-
         <!--Content Section-->
         <div id="about" class="scrollto clearfix">
-
-            <div class="row no-padding-bottom clearfix">
-
-
-                <!--Content Left Side-->
-                <div class="col-4">
-                    <!--User Testimonial-->
-                    <blockquote class="testimonial text-right bigtest">
-                        <q>Everything is theoretically impossible until it is done</q>
-                        <footer>— Robert A. Heinlein</footer>
-                    </blockquote>
-                    <!-- End of Testimonial-->
-
-                </div>
-                <!--End Content Left Side-->
-
-                <!--Content of the Right Side-->
-                <div class="col-2">
-                    <div class="section-heading">
-                        <h3>BELIEVING</h3>
-                        <h2 class="section-title">ABOUT US</h2>
-                        <p>At Code Driven Labs, our journey is rooted in a simple yet powerful objective: to make technology accessible and effortless for everyone. Founded with a passion for innovation and a commitment to simplifying the intricate world of tech, we have become a trusted name in the IT industry. Our unwavering dedication to this mission has led us to provide a diverse array of IT solutions that cater to the unique needs of businesses and individuals alike.</p>
-                    </div>
-                        <p>With a team of seasoned experts at the helm, Code Driven Labs has established itself as a hub of creativity, expertise, and cutting-edge solutions. Our comprehensive suite of services encompasses a wide spectrum of IT needs, from seamless web development to intricate software solutions. Whether you're a startup aiming to establish your digital presence or an enterprise seeking to optimize operations, we've got you covered. At Code Driven Labs, we don't just offer services; we forge partnerships that drive success, transforming complex challenges into simplified solutions, one code at a time.</p>
-                    
-                </div>
-                <!--End Content Right Side-->
-
-                <div class="col-4">
-                    <img src="images/coding.png" alt="Dancer"/>
-                </div>
-
+          <div class="row no-padding-bottom clearfix">
+            <!--Content Left Side-->
+            <div class="col-4">
+              <!--User Testimonial-->
+              <blockquote class="testimonial text-right bigtest">
+                <q>Everything is theoretically impossible until it is done</q>
+                <footer>— Robert A. Heinlein</footer>
+              </blockquote>
+              <!-- End of Testimonial-->
             </div>
+            <!--End Content Left Side-->
 
+            <!--Content of the Right Side-->
+            <div class="col-2">
+              <div class="section-heading">
+                <h3>BELIEVING</h3>
+                <h2 class="section-title">ABOUT US</h2>
+                <p>
+                  At Code Driven Labs, our journey is rooted in a simple yet
+                  powerful objective: to make technology accessible and
+                  effortless for everyone. Founded with a passion for innovation
+                  and a commitment to simplifying the intricate world of tech,
+                  we have become a trusted name in the IT industry. Our
+                  unwavering dedication to this mission has led us to provide a
+                  diverse array of IT solutions that cater to the unique needs
+                  of businesses and individuals alike.
+                </p>
+              </div>
+              <p>
+                With a team of seasoned experts at the helm, Code Driven Labs
+                has established itself as a hub of creativity, expertise, and
+                cutting-edge solutions. Our comprehensive suite of services
+                encompasses a wide spectrum of IT needs, from seamless web
+                development to intricate software solutions. Whether you're a
+                startup aiming to establish your digital presence or an
+                enterprise seeking to optimize operations, we've got you
+                covered. At Code Driven Labs, we don't just offer services; we
+                forge partnerships that drive success, transforming complex
+                challenges into simplified solutions, one code at a time.
+              </p>
+            </div>
+            <!--End Content Right Side-->
 
+            <div class="col-4">
+              <img src="images/coding.png" alt="Dancer" />
+            </div>
+          </div>
         </div>
         <!--End of Content Section-->
 
         <!--Testimonials-->
-        <aside id="testimonials" class="scrollto text-center" data-enllax-ratio=".2">
-
-            <div class="row clearfix">
-
-                <div class="section-heading">
-                    <h3>FEEDBACK</h3>
-                    <h2 class="section-title">What our customers are saying</h2>
-                </div>
-
-                <!--User Testimonial-->
-                <blockquote class="col-3 testimonial classic">
-                    <img src="images/user-images/user-1.jpeg" alt="User"/>
-                    <q>CDL has transformed my travel business with their outstanding travel booking software. The customized solution is user-friendly, efficient, and highly reliable. Their support is top-notch. I wholeheartedly recommend them to anyone in the travel industry. Thank you for making my business better!</q>
-                    <footer>Balwant Singh - Ribango</footer>
-                </blockquote>
-                <!-- End of Testimonial-->
-
-                <!--User Testimonial-->
-                <blockquote class="col-3 testimonial classic">
-                    <img src="images/user-images/user-2.jpeg" alt="User"/>
-                    <q>Code Driven Labs created an outstanding CPA website for me. It's professional, user-friendly, and perfectly represents my services. I'm impressed with their work and highly recommend them for any web development project. Thanks for boosting my online presence!</q>
-                    <footer>Akhil Bansal - US Tax Gurus</footer>
-                </blockquote>
-                <!-- End of Testimonial-->
-
-                <!--User Testimonial-->
-                <blockquote class="col-3 testimonial classic">
-                    <img src="images/user-images/user-3.png" alt="User"/>
-                    <q>These people have truly impressed me with the creation of my e-commerce store for premium products. It's not just a website; it's an elegant shopping destination. Their work has elevated my business, and I wholeheartedly recommend them for e-commerce solutions. Thank you for making my online presence shine!</q>
-                    <footer>Sanjeev Sharma - Udak</footer>
-                </blockquote>
-                <!-- End of Testimonial-->
-
+        <aside
+          id="testimonials"
+          class="scrollto text-center"
+          data-enllax-ratio=".2"
+        >
+          <div class="row clearfix">
+            <div class="section-heading">
+              <h3>FEEDBACK</h3>
+              <h2 class="section-title">What our customers are saying</h2>
             </div>
 
+            <!--User Testimonial-->
+            <blockquote class="col-3 testimonial classic">
+              <img src="images/user-images/user-1.jpeg" alt="User" />
+              <q
+                >CDL has transformed my travel business with their outstanding
+                travel booking software. The customized solution is
+                user-friendly, efficient, and highly reliable. Their support is
+                top-notch. I wholeheartedly recommend them to anyone in the
+                travel industry. Thank you for making my business better!</q
+              >
+              <footer>Balwant Singh - Ribango</footer>
+            </blockquote>
+            <!-- End of Testimonial-->
+
+            <!--User Testimonial-->
+            <blockquote class="col-3 testimonial classic">
+              <img src="images/user-images/user-2.jpeg" alt="User" />
+              <q
+                >Code Driven Labs created an outstanding CPA website for me.
+                It's professional, user-friendly, and perfectly represents my
+                services. I'm impressed with their work and highly recommend
+                them for any web development project. Thanks for boosting my
+                online presence!</q
+              >
+              <footer>Akhil Bansal - US Tax Gurus</footer>
+            </blockquote>
+            <!-- End of Testimonial-->
+
+            <!--User Testimonial-->
+            <blockquote class="col-3 testimonial classic">
+              <img src="images/user-images/user-3.png" alt="User" />
+              <q
+                >These people have truly impressed me with the creation of my
+                e-commerce store for premium products. It's not just a website;
+                it's an elegant shopping destination. Their work has elevated my
+                business, and I wholeheartedly recommend them for e-commerce
+                solutions. Thank you for making my online presence shine!</q
+              >
+              <footer>Sanjeev Sharma - Udak</footer>
+            </blockquote>
+            <!-- End of Testimonial-->
+          </div>
         </aside>
         <!--End of Testimonials-->
 
         <!--Clients-->
         <section id="clients" class="scrollto clearfix">
-            <div class="row clearfix">
-
-                <div class="col-3">
-
-                    <div class="section-heading">
-                        <h3>TRUST</h3>
-                        <h2 class="section-title">Companies who use our services</h2>
-                    </div>
-
-                </div>
-
-                <div class="col-2-3">
-
-                    <a href="#clients" class="col-3">
-                        <img src="images/company-images/logo1.png" alt="Company"/>
-                        <div class="client-overlay"><span>Udak</span></div>
-                    </a>
-                    <a href="#clients" class="col-3">
-                        <img src="images/company-images/logo2.png" alt="Company"/>
-                        <div class="client-overlay"><span>Guru Nanak Dev Dental College</span></div>
-                    </a>
-                    <a href="#clients" class="col-3">
-                        <img src="images/company-images/logo3.png" alt="Company"/>
-                        <div class="client-overlay"><span>Pitambra Trading</span></div>
-                    </a>
-                    <a href="#clients" class="col-3">
-                        <img src="images/company-images/logo4.png" alt="Company"/>
-                        <div class="client-overlay"><span>US Tax Gurus</span></div>
-                    </a>
-                    <a href="#clients" class="col-3">
-                        <img src="images/company-images/logo5.png" alt="Company"/>
-                        <div class="client-overlay"><span>Arora Automobiles</span></div>
-                    </a>
-                    <a href="#clients" class="col-3">
-                        <img src="images/company-images/logo6.png" alt="Company"/>
-                        <div class="client-overlay"><span>Ribango</span></div>
-                    </a>
-                    
-                </div>
-
+          <div class="row clearfix">
+            <div class="col-3">
+              <div class="section-heading">
+                <h3>TRUST</h3>
+                <h2 class="section-title">Companies who use our services</h2>
+              </div>
             </div>
+
+            <div class="col-2-3">
+              <a href="#clients" class="col-3">
+                <img src="images/company-images/logo1.png" alt="Company" />
+                <div class="client-overlay"><span>Udak</span></div>
+              </a>
+              <a href="#clients" class="col-3">
+                <img src="images/company-images/logo2.png" alt="Company" />
+                <div class="client-overlay">
+                  <span>Guru Nanak Dev Dental College</span>
+                </div>
+              </a>
+              <a href="#clients" class="col-3">
+                <img src="images/company-images/logo3.png" alt="Company" />
+                <div class="client-overlay"><span>Pitambra Trading</span></div>
+              </a>
+              <a href="#clients" class="col-3">
+                <img src="images/company-images/logo4.png" alt="Company" />
+                <div class="client-overlay"><span>US Tax Gurus</span></div>
+              </a>
+              <a href="#clients" class="col-3">
+                <img src="images/company-images/logo5.png" alt="Company" />
+                <div class="client-overlay"><span>Arora Automobiles</span></div>
+              </a>
+              <a href="#clients" class="col-3">
+                <img src="images/company-images/logo6.png" alt="Company" />
+                <div class="client-overlay"><span>Ribango</span></div>
+              </a>
+            </div>
+          </div>
         </section>
         <!--End of Clients-->
 
         <!--Pricing Tables-->
-        <section id="contact" class="secondary-color text-center scrollto clearfix ">
-            <div class="row">
+        <section
+          id="contact"
+          class="secondary-color text-center scrollto clearfix"
+        >
+          <div class="row">
+            <div class="section-heading">
+              <h3>CONTACT US</h3>
+              <h2 class="section-title">CONTACT US</h2>
+              <p style="margin: 0; padding: 0">
+                Get in touch and let us know how we can help you
+              </p>
+            </div>
 
-                <div class="section-heading">
-                    <h3>CONTACT US</h3>
-                    <h2 class="section-title">CONTACT US</h2>
-                    <p style="margin: 0; padding: 0;">Get in touch and let us know how we can help you</p>
+            <div class="row clearfix" style="align-items: center">
+              <div
+                class="col-3 icon-block icon-top wow fadeInUp"
+                data-wow-delay="0.1s"
+                style="padding: 5px"
+              >
+                <!--Icon-->
+                <div
+                  style="
+                    border: 1px solid #0015a5;
+                    padding: 14px 0 14px 0;
+                    height: 200px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                  "
+                >
+                  <div class="icon">
+                    <i class="fa fa-envelope fa-2x"></i>
+                  </div>
+                  <!--Icon Block Description-->
+                  <div class="icon-block-description">
+                    <h4>Drop us an email</h4>
+                    <p>info@codedrivenlabs.com</p>
+                  </div>
                 </div>
-
-                <div class="row clearfix" style="align-items: center;">
-
-                    
-                    <div class="col-3 icon-block icon-top wow fadeInUp" data-wow-delay="0.1s" style="padding: 5px;">
-                        <!--Icon-->
-                        <div style="border: 1px solid #0015A5; padding: 14px 0 14px 0; height: 200px; display: flex; align-items: center; justify-content: center; flex-direction: column;">
-                        <div class="icon">
-                            <i class="fa fa-envelope fa-2x"></i>
-                        </div>
-                        <!--Icon Block Description-->
-                        <div class="icon-block-description">
-                            <h4>Drop us an email</h4>
-                            <p>info@codedrivenlabs.com</p>
-                        </div>
-                       </div>
-                    </div>
-                    <div class="col-3 icon-block icon-top wow fadeInUp" data-wow-delay="0.1s" style="padding: 5px;" >
-                        <div style="border: 1px solid #0015A5; padding: 14px 0 14px 0; height: 200px; display: flex; align-items: center; justify-content: center; flex-direction: column;">
-                        <!--Icon-->
-                        <div class="icon">
-                            <i class="fa fa-phone fa-2x"></i>
-                        </div>
-                        <!--Icon Block Description-->
-                        <div class="icon-block-description">
-                            <h4>Give us a call</h4>
-                            <p>+91-8699820778</p>
-                            <p style="margin-top: -15px;">+91-7717368146</p>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="col-3 icon-block icon-top wow fadeInUp" data-wow-delay="0.1s" style="padding: 5px;">
-                        <div style="border: 1px solid #0015A5; padding: 14px 0 14px 0; height: 200px; display: flex; align-items: center; justify-content: center; flex-direction: column;">
-                        <!--Icon-->
-                        <div class="icon">
-                            <i class="fa fa-map-marker fa-2x"></i>
-                        </div>
-                        <!--Icon Block Description-->
-                        <div class="icon-block-description">
-                            <h4>Visit our office</h4>
-                            <p>Hyderabad</p>
-                            <!-- <p style="margin-top: -15px;">New York. 112 W 34th St</p> -->
-                        </div>
-                    </div>
-                    </div>
-
+              </div>
+              <div
+                class="col-3 icon-block icon-top wow fadeInUp"
+                data-wow-delay="0.1s"
+                style="padding: 5px"
+              >
+                <div
+                  style="
+                    border: 1px solid #0015a5;
+                    padding: 14px 0 14px 0;
+                    height: 200px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                  "
+                >
+                  <!--Icon-->
+                  <div class="icon">
+                    <i class="fa fa-phone fa-2x"></i>
+                  </div>
+                  <!--Icon Block Description-->
+                  <div class="icon-block-description">
+                    <h4>Give us a call</h4>
+                    <p>+91-8699820778</p>
+                    <p style="margin-top: -15px">+91-7717368146</p>
+                  </div>
                 </div>
-
-                <div class="row clearfix wow fadeInUp" data-wow-delay="0.4s" style="align-items: center;">
-                    <div class="section-heading">
-                        <h2 class="section-title">How May We Help You!</h2>
-                    </div>
-                    <div style="background-color: #0015A5; padding: 10px; color: white; margin: 0 10px 0 10px; display: flex; align-items: center; justify-content: center; gap: 15px;">
-                        <i class="fa fa-info-circle fa-2x"></i>
-                        <p>We value your inquiry and appreciate your interest in our services. Our team is dedicated to providing you with the best possible support.</p>
-                    </div>
-                   <div class="col-2">
-                    <div class="my-form">
-
-                        <form  method="POST" id="myForm">
-                        <!-- <h2 class="section-title" style="text-align: left;">How May We Help You!</h2> -->
-                        <div style="text-align: left;">
-                            <h6 style="font-weight: bold;">Enter Name</h6>
-                            <input type="text" id="name" name="name" placeholder="Enter your name" style="width: 100%;" required/>
-                        </div>
-                        <div style="text-align: left;">
-                            <h6 style="font-weight: bold;">Enter Email Address</h6>
-                            <input type="email" id="email" name="email" placeholder="Enter your email" style="width: 100%;" required/>
-                        </div>
-                        <div style="text-align: left;">
-                            <h6 style="font-weight: bold;">Enter Phone Number (Optional)</h6>
-                            <input type="tel" name="phone" id="phone" placeholder="Enter your email" style="width: 100%;" required autocomplete="off"/>
-                        </div>
-                        <div style="text-align: left;">
-                            <h6 style="font-weight: bold;">Write Your Message</h6>
-                            <textarea name="message" id="message" placeholder="Enter your message" style="width: 100%;" rows="5"></textarea>
-                        </div>
-                        <div id="thankYouMessage" style="margin-top: 10px; display: none; background-color: green; color: white; padding: 3px 0 3px 0;">
-                            Thank you for your interest. We will get back to you soon.
-                        </div>
-                        <button type="submit" class="button" style="width: 100%;">SEND</button>
-                       </form>
-                       
-                    
-                    </div>
-                   </div>
-                   <div class="col-2">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243646.90509723692!2d78.24323233266864!3d17.41260864143099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99daeaebd2c7%3A0xae93b78392bafbc2!2sHyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1693336992244!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                   </div>
+              </div>
+              <div
+                class="col-3 icon-block icon-top wow fadeInUp"
+                data-wow-delay="0.1s"
+                style="padding: 5px"
+              >
+                <div
+                  style="
+                    border: 1px solid #0015a5;
+                    padding: 14px 0 14px 0;
+                    height: 200px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                  "
+                >
+                  <!--Icon-->
+                  <div class="icon">
+                    <i class="fa fa-map-marker fa-2x"></i>
+                  </div>
+                  <!--Icon Block Description-->
+                  <div class="icon-block-description">
+                    <h4>Visit our office</h4>
+                    <p>Hyderabad</p>
+                    <!-- <p style="margin-top: -15px;">New York. 112 W 34th St</p> -->
+                  </div>
                 </div>
+              </div>
+            </div>
 
-                <!--Pricing Block-->
-                <!-- <div  style="align-items: center;" data-wow-delay="0.4s">
+            <div
+              class="row clearfix wow fadeInUp"
+              data-wow-delay="0.4s"
+              style="align-items: center"
+            >
+              <div class="section-heading">
+                <h2 class="section-title">How May We Help You!</h2>
+              </div>
+              <div
+                style="
+                  background-color: #0015a5;
+                  padding: 10px;
+                  color: white;
+                  margin: 0 10px 0 10px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  gap: 15px;
+                "
+              >
+                <i class="fa fa-info-circle fa-2x"></i>
+                <p>
+                  We value your inquiry and appreciate your interest in our
+                  services. Our team is dedicated to providing you with the best
+                  possible support.
+                </p>
+              </div>
+              <div class="col-2">
+                <div class="my-form">
+                  <form method="POST" id="myForm">
+                    <!-- <h2 class="section-title" style="text-align: left;">How May We Help You!</h2> -->
+                    <div style="text-align: left">
+                      <h6 style="font-weight: bold">Enter Name</h6>
+                      <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your name"
+                        style="width: 100%"
+                        required
+                      />
+                    </div>
+                    <div style="text-align: left">
+                      <h6 style="font-weight: bold">Enter Email Address</h6>
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        style="width: 100%"
+                        required
+                      />
+                    </div>
+                    <div style="text-align: left">
+                      <h6 style="font-weight: bold">
+                        Enter Phone Number (Optional)
+                      </h6>
+                      <input
+                        type="tel"
+                        name="phone"
+                        id="phone"
+                        placeholder="Enter your email"
+                        style="width: 100%"
+                        required
+                        autocomplete="off"
+                      />
+                    </div>
+                    <div style="text-align: left">
+                      <h6 style="font-weight: bold">Write Your Message</h6>
+                      <textarea
+                        name="message"
+                        id="message"
+                        placeholder="Enter your message"
+                        style="width: 100%"
+                        rows="5"
+                      ></textarea>
+                    </div>
+                    <div
+                      id="thankYouMessage"
+                      style="
+                        margin-top: 10px;
+                        display: none;
+                        background-color: green;
+                        color: white;
+                        padding: 3px 0 3px 0;
+                      "
+                    >
+                      Thank you for your interest. We will get back to you soon.
+                    </div>
+                    <button type="submit" class="button" style="width: 100%">
+                      SEND
+                    </button>
+                  </form>
+                </div>
+              </div>
+              <div class="col-2">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243646.90509723692!2d78.24323233266864!3d17.41260864143099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99daeaebd2c7%3A0xae93b78392bafbc2!2sHyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1693336992244!5m2!1sen!2sin"
+                  width="600"
+                  height="450"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+
+            <!--Pricing Block-->
+            <!-- <div  style="align-items: center;" data-wow-delay="0.4s">
                     <div class="">
                         
                         <div class="pricing">
@@ -465,114 +661,118 @@
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243646.90509723692!2d78.24323233266864!3d17.41260864143099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99daeaebd2c7%3A0xae93b78392bafbc2!2sHyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1693336992244!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     
                 </div> -->
-                <!--End Pricing Block-->
+            <!--End Pricing Block-->
 
-                <!--Pricing Block-->
-                <!--End Pricing Block-->
-            </div>
+            <!--Pricing Block-->
+            <!--End Pricing Block-->
+          </div>
         </section>
         <!--End of Pricing Tables-->
+      </main>
+      <!--End Main Content Area-->
 
-    </main>
-    <!--End Main Content Area-->
-
-
-    <!--Footer-->
-    <footer id="landing-footer" class="clearfix">
+      <!--Footer-->
+      <footer id="landing-footer" class="clearfix">
         <div class="row clearfix">
+          <p id="copyright" class="col-2">Made by Code Driven Labs</p>
 
-            <p id="copyright" class="col-2">Made by Code Driven Labs</a></p>
-
-            <!--Social Icons in Footer-->
-            <ul class="col-2 social-icons">
-                <li>
-                    <a target="_blank" title="Facebook" href="https://www.facebook.com/codedrivenlabs">
-                        <i class="fa fa-facebook fa-1x"></i><span>Facebook</span>
-                    </a>
-                </li>
-                <li>
-                    <a target="_blank" title="Google+" href="http://google.com/+username">
-                        <i class="fa fa-google-plus fa-1x"></i><span>Google+</span>
-                    </a>
-                </li>
-                <li>
-                    <a target="_blank" title="Instagram" href="http://www.instagram.com/codedrivenlabs">
-                        <i class="fa fa-instagram fa-1x"></i><span>Instagram</span>
-                    </a>
-                </li>
-            </ul>
-            <!--End of Social Icons in Footer-->
+          <!--Social Icons in Footer-->
+          <ul class="col-2 social-icons">
+            <li>
+              <a
+                target="_blank"
+                title="Facebook"
+                href="https://www.facebook.com/codedrivenlabs"
+              >
+                <i class="fa fa-facebook fa-1x"></i><span>Facebook</span>
+              </a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                title="Google+"
+                href="http://google.com/+username"
+              >
+                <i class="fa fa-google-plus fa-1x"></i><span>Google+</span>
+              </a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                title="Instagram"
+                href="http://www.instagram.com/codedrivenlabs"
+              >
+                <i class="fa fa-instagram fa-1x"></i><span>Instagram</span>
+              </a>
+            </li>
+          </ul>
+          <!--End of Social Icons in Footer-->
         </div>
-    </footer>
-    <!--End of Footer-->
+      </footer>
+      <!--End of Footer-->
+    </div>
 
-</div>
-
-<!-- Include JavaScript resources -->
-<script src="js/jquery.1.8.3.min.js"></script>
-<script src="js/wow.min.js"></script>
-<script src="js/featherlight.min.js"></script>
-<script src="js/featherlight.gallery.min.js"></script>
-<script src="js/jquery.enllax.min.js"></script>
-<script src="js/jquery.scrollUp.min.js"></script>
-<script src="js/jquery.easing.min.js"></script>
-<script src="js/jquery.stickyNavbar.min.js"></script>
-<script src="js/jquery.waypoints.min.js"></script>
-<script src="js/images-loaded.min.js"></script>
-<script src="js/lightbox.min.js"></script>
-<script src="js/site.js"></script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-<script>
-    $(document).ready(function() {
-        $('.my-form').waypoint(function() {
-        }, {
-            offset: '50%'
+    <!-- Include JavaScript resources -->
+    <script src="js/jquery.1.8.3.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/featherlight.min.js"></script>
+    <script src="js/featherlight.gallery.min.js"></script>
+    <script src="js/jquery.enllax.min.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.stickyNavbar.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/images-loaded.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    <script src="js/site.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".my-form").waypoint(function () {}, {
+          offset: "50%",
         });
-    });
-</script>
+      });
+    </script>
 
-
-<script>
-    $(document).ready(function () {
+    <script>
+      $(document).ready(function () {
         $("#myForm").submit(function (event) {
-            event.preventDefault(); // Prevent the default form submission
+          event.preventDefault(); // Prevent the default form submission
 
-            // Prepare the data to send
-            var formData = {
-                name: $("input[name='name']").val(),
-                email: $("input[name='email']").val(),
-                phone: $("input[name='phone']").val(),
-                message: $("textarea[name='message']").val()
-            };
+          // Prepare the data to send
+          var formData = {
+            name: $("input[name='name']").val(),
+            email: $("input[name='email']").val(),
+            phone: $("input[name='phone']").val(),
+            message: $("textarea[name='message']").val(),
+          };
 
-            // Send the POST request to FormSubmit
-            // info@codedrivenlabs.com
-            $.ajax({
-                url: "https://formsubmit.co/ajax/codedrivenlabs@gmail.com",
-                method: "POST",
-                data: formData,
-                dataType: "json",
-                success: function (response) {
-                    console.log("res",response)
-                    if (response.success) {
-                        // Form submission successful
-                        // $("#myForm").hide();
-                        $("#thankYouMessage").show();
-                    } else {
-                        // Handle form submission error if needed
-                        console.error("Form submission error:", response.message);
-                    }
-                },
-                error: function (error) {
-                    // Handle any errors during form submission
-                    console.error("Form submission error:", error);
-                }
-            });
+          // Send the POST request to FormSubmit
+          // info@codedrivenlabs.com
+          $.ajax({
+            url: "https://formsubmit.co/ajax/codedrivenlabs@gmail.com",
+            method: "POST",
+            data: formData,
+            dataType: "json",
+            success: function (response) {
+              console.log("res", response);
+              if (response.success) {
+                // Form submission successful
+                // $("#myForm").hide();
+                $("#thankYouMessage").show();
+              } else {
+                // Handle form submission error if needed
+                console.error("Form submission error:", response.message);
+              }
+            },
+            error: function (error) {
+              // Handle any errors during form submission
+              console.error("Form submission error:", error);
+            },
+          });
         });
-    });
-</script>
-
-
-</body>
+      });
+    </script>
+  </body>
 </html>
